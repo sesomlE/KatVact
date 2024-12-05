@@ -1,0 +1,31 @@
+.parent {
+  background-color: antiquewhite;
+  width: 800px;
+  height: 600px;
+  justify-content: center;
+  align-items: center;
+}
+.firstchild {
+  width: 400px;
+  height: 300px;
+  background-color: blue;
+  animation-name: example;
+  transition-duration: 4s;
+  animation-iteration-count: infinite;
+  /* translate: 100px 100px;
+  transition-duration: 4s;
+  transform: rotateX(360 "360");
+  justify-content: center;
+  align-items: center; */
+}
+@keyframes example {
+  0% {
+    transform: scale(0.4);
+  }
+  50%  {
+    background-color: black;
+  }
+  100% {
+    transform: scale(2);
+  }
+}

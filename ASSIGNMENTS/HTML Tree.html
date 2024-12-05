@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tree Structure</title>
+    <style>
+        /* Styling the tree structure */
+        .tree {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Styling each box in the tree */
+        .box {
+            padding: 10px 20px;
+            margin: 10px;
+            border: 1px solid #333;
+            border-radius: 5px;
+            background-color: #f5f5f5;
+            font-weight: bold;
+            text-align: center;
+            position: relative;
+        }
+        
+        /* Lines connecting the boxes */
+        .connector {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            width: 2px;
+            height: 20px;
+            background-color: #333;
+        }
+        
+        .horizontal-line {
+            position: absolute;
+            width: 50px;
+            height: 2px;
+            background-color: #333;
+        }
+
+        /* Flexbox layout for rows of boxes */
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        /* Adjust spacing between rows */
+        .row + .row {
+            margin-top: 40px;
+        }
+
+        /* Alignment adjustments for connecting lines */
+        .head-body {
+            left: 25%;
+        }
+
+        .body-left {
+            left: -50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="tree">
+        <!-- Top level box (HTML) -->
+        <div class="box">
+            HTML
+            <div class="connector"></div>
+        </div>
+
+        <!-- Row for Head and Body -->
+        <div class="row">
+            <!-- Head box with line -->
+            <div class="box">
+                Head
+                <div class="connector head-body"></div>
+            </div>
+
+            <!-- Body box with line -->
+            <div class="box">
+                Body
+                <div class="connector"></div>
+            </div>
+        </div>
+
+        <!-- Row for Title under Head -->
+        <div class="row">
+            <div class="box" style="margin-right: 150px;">
+                Title
+            </div>
+        </div>
+
+        <!-- Row for H1 and Div under Body -->
+        <div class="row">
+            <div class="box body-left">
+                H1
+            </div>
+            <div class="box">
+                Div
+            </div>
+        </div>
+    </div>
+</body>
+</html>

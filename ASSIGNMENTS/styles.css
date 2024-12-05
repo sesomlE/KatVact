@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  background-color: #f0f2f5;
+  color: #1c1e21;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh; /* Adjusted height for better spacing */
+  padding: 20px;
+}
+
+.left-section {
+  flex: 1;
+  max-width: 600px;
+  padding-right: 60px;
+}
+
+.left-section h1 {
+  font-size: 50px;
+  color: #1877f2;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.left-section p {
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.right-section {
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #dddfe2;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #1877f2;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.login-btn:hover {
+  background-color: #166fe5;
+}
+
+.forgot-link {
+  display: block;
+  text-align: center;
+  margin-top: 12px;
+  font-size: 14px;
+  color: #1877f2;
+  text-decoration: none;
+}
+
+.login-box hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #dddfe2;
+}
+
+.signup-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #42b72a;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.signup-btn:hover {
+  background-color: #36a420;
+}
+
+/* Create a Page section positioned directly below the right section */
+.create-page-container {
+  display: flex;
+  justify-content: center; /* Center the text */
+  margin-top: 20px; /* Ensure some space between the right section and this section */
+}
+
+.create-page {
+  text-align: center;
+  font-size: 14px;
+}
+
+.create-page-link {
+  color: #1877f2;
+  text-decoration: none;
+}
+
+.create-page-link:hover {
+  text-decoration: underline;
+}
+
+footer {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.languages a {
+  color: #606770;
+  font-size: 12px;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+footer hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #dddfe2;
+}
+
+.footer-links a {
+  color: #606770;
+  font-size: 12px;
+  text-decoration: none;
+  margin: 0 8px;
+  display: inline-block;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
